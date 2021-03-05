@@ -73,11 +73,6 @@ jobs:
           #python scripts/Norway-crawler.py
           #python scripts/Poland-crawler.py
 
-
-
-
-
-
       - name: Commit data files
         run: |
           git config --local user.email "action@github.com"
