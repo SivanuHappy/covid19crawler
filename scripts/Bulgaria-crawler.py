@@ -23,6 +23,8 @@ response = requests.get(url, headers={'Connection': 'close'})
 soup = BeautifulSoup(response.content, 'lxml')
 tables = soup.select('table')
 
+
+
 print(tables)
 
 mkfile_time = datetime.strftime(datetime.now(), '%Y%m%d%H%M')
