@@ -88,5 +88,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          repository: SivanuHappy/covid19rawler
+          repository: SivanuHappy/covid19crawler
           github_token: ${{ secrets.GITHUB_TOKEN }}
