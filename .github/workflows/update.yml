@@ -45,7 +45,7 @@ jobs:
           python scripts/BosniaHerzegovina-crawler.py
           python scripts/Nigeria-crawler.py
           python scripts/Libya-crawler.py
-          python scripts/Malaysia-crawler.py
+          #python scripts/Malaysia-crawler.py
           #python scripts/Cambodia-crawler.py
           #python scripts/Oman-crawler.py
           python scripts/Bangladesh-crawler.py
@@ -72,7 +72,6 @@ jobs:
           #python scripts/SouthAfrica-crawler.py
           #python scripts/Norway-crawler.py
           #python scripts/Poland-crawler.py
-
 
       - name: Commit data files
         run: |
