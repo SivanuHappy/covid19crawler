@@ -14,7 +14,6 @@ from bs4 import BeautifulSoup
 
 url = 'https://github.com/iMEdD-Lab/open-data/blob/master/COVID-19/regions_greece.csv'
 
-
 # Get the data
 response = requests.get(url, headers={'Connection': 'close'})
 soup = BeautifulSoup(response.content, 'lxml')
