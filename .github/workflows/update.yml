@@ -3,7 +3,7 @@ name: Dataset Update
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: "25 */22 * * *"
 
