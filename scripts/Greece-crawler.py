@@ -34,3 +34,4 @@ for t in tag:
 	t = t.contents[1::2]
 	row = [t[2].contents[0], t[1].contents[0], t[4].contents[0], t[5].contents[0]]
 	writer.writerow(row)
+	##Test
