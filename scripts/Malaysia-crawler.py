@@ -22,7 +22,7 @@ url = 'https://www.infosihat.gov.my/index.php/wabak-novel-coronavirus-atau-2019n
 # img = soup.select('#top > div.main-content > section.rte.w-max > accordions:nth-child(14) > div.accordion.card.accordion-open > div > div > p:nth-child(21) > img')
 # urllib.request.urlretrieve(img,'D:/google drive/crawler/%s.jpg"%(x)')
 
-response = requests.get(url, headers={'Connection': 'close'})
+response = requests.get(url, headers={'Connection': 'close'}, verify=False)
 soup = BeautifulSoup(response.content, 'lxml')
 items = soup.find_all('img')
 print (items)
@@ -62,7 +62,7 @@ for index, item in enumerate(items):
 		#html = requests.get(item.get('src'))
 		html = item.get('src')
 		htmlnew = urllib.parse.urljoin(basewebsite,html)
-		html = requests.get(htmlnew)
+		html = requests.get(htmlnew, verify=False)
 		print(htmlnew)
 		img_name = folder_path + str(index + 1) + '.png'
 		with open(img_name, 'wb') as file:  # 以byte形式将图片数据写入
